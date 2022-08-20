@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Витрина</title>
+    <style>
+        .main {
+            background-color: chocolate;
+        }
+      .shop {
+        display: flex;
+        justify-content: center;
+        background-color: purple;
+      }
+      .product {
+        margin: 0 auto;
+      }
+      .btn {
+        margin-left: 20px;
+        margin-bottom: 20px;
+      }
+      .basket {
+        margin-top: 100px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body class="main">
+    <div class="shop">
+      <div class="product">
+        <h2>Lenovo Yoga</h2>
+        <p>Price: <span class="price">3000</span></p>
+        <button class="btn" onclick="addToBasket(1)">Buy</button>
+      </div>
+      <div class="product">
+        <h2>Acre Aspire</h2>
+        <p>Price: <span class="price">2000</span></p>
+        <button class="btn" onclick="addToBasket(2)">Buy</button>
+      </div>
+      <div class="product">
+        <h2>Dell Vostro</h2>
+        <p>Price: <span class="price">2500</span></p>
+        <button class="btn" onclick="addToBasket(3)">Buy</button>
+      </div>
+    </div>
+    <hr />
+    <div class="basket">
+      <h2 style="text-align: center">Cart</h2>
+      <ul id="basket-items"></ul>
+      <h3 style="text-align: center">Total price: <span id="total">0</span></h3>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
